@@ -8,9 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ToDo;
 
 
+//　Uploaded at 
+// https://github.com/HYMARU0111/Todo-List
 namespace ToDo
 {
     public partial class Main : Form
@@ -159,6 +160,10 @@ namespace ToDo
             this.Close();
         }
 
- 
+        private void ItemData_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+            if (e.ColumnIndex < 0) return;
+        }
     }
 }

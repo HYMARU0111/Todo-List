@@ -63,6 +63,7 @@
             this.ItemData.RowTemplate.Height = 24;
             this.ItemData.Size = new System.Drawing.Size(625, 268);
             this.ItemData.TabIndex = 2;
+            this.ItemData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ItemData_CellClick);
             this.ItemData.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.ItemData_CellFormatting);
             this.ItemData.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.ItemData_RowPrePaint);
             // 
